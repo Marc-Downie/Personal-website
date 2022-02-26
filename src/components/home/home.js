@@ -1,25 +1,26 @@
 import React from 'react'
 import '../home/home.css'
-import marcHead from '../../assets/img-MarcHead.jpg'
+import marcHead from '../../assets/sam_jack.jpg'
 
 
 
 export default function Home() {
   return (
     <>
-    <div className="bg">
-      <span className='name-wrapper'>
-        <p className="name">Marc Downie</p>
-        <p className="job-title">Software Engineer</p>
-      </span>
+      <div className="home-bg">
 
-      <div className="img-wrapper">
-        <img className="img-head" src={marcHead} alt='My Face'></img>
-      </div>
-      <p className="home-txt">
+        <div className='name-wrapper'>
+          <text className="name">Marc Downie</text>
+          <text className="job-title">Software Engineer</text>
+        </div>
 
-        <h3>Welcome</h3>
-      </p>
+        <div className="img-wrapper">
+          <img className="img-head" src={marcHead} alt='My Face'></img>
+        </div>
+
+        <text className="home-txt">
+          <h3>Welcome</h3>
+        </text>
       </div>
     </>
   )
