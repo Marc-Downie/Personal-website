@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../aboutMe/aboutMe.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 export default function AboutMe() {
+    useEffect(() => {
+        Aos.init({})
+    }, []);
+
     return (
         <>
             <div className="about-bg">
 
                 <div >
-                    <text className="about-header">About Me</text>
+                    <text data-aos-duration="2000" data-aos="fade-up" className="about-header"
+                    >About Me</text>
                 </div>
 
-                <view className="about-txt">
+                <view data-aos-duration="3000" data-aos="fade-up" className="about-txt">
                     <h4>
                         I wanted to improve myself and my career opportunities by starting my journey to become a Software Engineer.
                         I have graduated from a Professional Software Development course at CodeClan that teaches software fundamentals
