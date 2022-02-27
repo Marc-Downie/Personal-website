@@ -1,0 +1,7 @@
+.nav-buttons {
+  font-family: "Libre Caslon Display", serif;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
